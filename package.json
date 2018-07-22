@@ -1,0 +1,23 @@
+{
+  "name": "wholepagecss",
+  "version": "0.0.1",
+  "description": " grid layout with fixed aspect ratio",
+  "main": "dist/wholepagecss.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aute/wholepagecss.git"
+  },
+  "keywords": [
+    "grid layout",
+    "fixed aspect ratio"
+  ],
+  "author": "aute",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aute/wholepagecss/issues"
+  },
+  "homepage": "https://github.com/aute/wholepagecss#readme"
+}
