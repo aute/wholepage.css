@@ -1,9 +1,12 @@
 {
   "name": "wholepage.css",
   "version": "0.0.1",
-  "description": " grid layout with fixed aspect ratio",
+  "description": "grid layout with fixed aspect ratio",
   "main": "dist/wholepage.css",
-  "scripts": {},
+  "scripts": {
+    "start": "parcel docs/src/index.html -d docs/",
+    "build": "parcel build src/wholepage.scss --no-source-maps"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aute/wholepage.git"
@@ -17,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/aute/wholepage/issues"
   },
-  "homepage": "https://github.com/aute/wholepage#readme"
+  "homepage": "https://github.com/aute/wholepage#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.9.7",
+    "node-sass": "^4.9.2"
+  }
 }
