@@ -1,37 +1,43 @@
-.vs-container {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(30, 1fr);
-    grid-template-rows: repeat(30, 1fr);
-    &.vs-container-item-gap{
-      grid-gap: 1rem;
-    }
-    box-sizing: border-box;
-    .vs-item {
-      overflow: hidden;
-      display: grid;
-      grid-row: auto / span 1;
-      grid-column: auto / span 1;
-    }
-    @for $i from 1 through 30 {
-      .vs-item-raw-#{$i} {
-        grid-row: auto / span $i;
-      }
-    }
-    @for $i from 1 through 30 {
-      .vs-item-col-#{$i} {
-        grid-column: auto / span $i;
-      }
-    }
-    @for $i from 1 through 30 {
-      .vs-item-row-start-#{$i} {
-        grid-row-start: $i;
-      }
-    }
-    @for $i from 1 through 30 {
-      .vs-item-col-start-#{$i} {
-        grid-column-start: $i;
-      }
-    }
+[class^="wpg-container"] {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(30, 1fr);
+  box-sizing: border-box;
+}
+
+.wpg-container--gutter {
+  grid-gap: 1rem;
+}
+
+[class^="wpg-block"] {
+  overflow: hidden;
+  display: grid;
+  grid-row: auto / span 1;
+  grid-column: auto / span 1;
+}
+
+@for $i from 1 through 30 {
+  .wpg-block--raw-#{$i} {
+    grid-row: auto / span $i;
   }
+}
+
+@for $i from 1 through 30 {
+  .wpg-block--col-#{$i} {
+    grid-column: auto / span $i;
+  }
+}
+
+@for $i from 1 through 30 {
+  .wpg-block--row-start-#{$i} {
+    grid-row-start: $i;
+  }
+}
+
+@for $i from 1 through 30 {
+  .wpg-block--col-start-#{$i} {
+    grid-column-start: $i;
+  }
+}
