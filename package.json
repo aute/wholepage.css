@@ -4,8 +4,8 @@
   "description": "grid layout with fixed aspect ratio",
   "main": "dist/wholepage.css",
   "scripts": {
-    "start": "parcel docs/src/index.html -d docs/",
-    "build": "parcel build src/wholepage.scss --no-source-maps"
+    "start": "cd docs && ls | grep -v src | xargs rm && cd .. && parcel docs/src/index.html -d docs/",
+    "build": "cd docs && ls | grep -v src | xargs rm && cd .. && parcel build docs/src/index.html -d docs/ --no-source-maps --public-url ./ && parcel build src/wholepage.scss --no-source-maps"
   },
   "repository": {
     "type": "git",
