@@ -10,7 +10,7 @@ wholepage.css 是一个暂未开源的主项目的副产物，主项目是一个
 
 ### 手动引入
 
-下载已编译的 [Wholepage CSS 文件](https://github.com/aute/wholepage.css/blob/master/dist/wholepage.css)。并将位于 `/dist` 的 wholepage.css 文件包含至你的网站或 Web 应用的 <head> 部分。
+下载已编译的 [Wholepage CSS 文件](https://github.com/aute/wholepage.css/tree/master/dist)。并将位于 `/dist` 的 wholepage.css 文件包含至你的网站或 Web 应用的 <head> 部分。
 
 `<link rel="stylesheet" href="wholepage.css">`
 
