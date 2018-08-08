@@ -1,6 +1,6 @@
 # Why ?
 
-CSS Grid Layout 为 CSS 原本孱弱的二维布局能力带来了极大提升，使 web 页面的排版可以更加接近于印刷品。另一方面，大量新属性与新规则的加入，难免会让人有些无所适从。考虑到行业中类似 [Bootstrap Grid system](https://getbootstrap.com/docs/4.1/layout/grid/) 的布局书写风格早已被广泛接受，Wholepage CSS 利用了 CSS Grid 属性，并采用 [Bootstrap Grid system](https://getbootstrap.com/docs/4.1/layout/grid/) 布局书写风格来方便你进行二维布局书写。
+CSS Grid Layout 为 CSS 原本孱弱的二维布局能力带来了极大提升，使 Web 页面的排版可以更加接近于印刷品。另一方面，大量新属性与新规则的加入，难免会让人有些无所适从。考虑到行业中类似 [Bootstrap Grid system](https://getbootstrap.com/docs/4.1/layout/grid/) 的布局书写风格早已被广泛接受，Wholepage CSS 利用了 CSS Grid 属性，并采用 [Bootstrap Grid system](https://getbootstrap.com/docs/4.1/layout/grid/) 布局书写风格来方便你进行二维布局书写。
 
 # Wholepage CSS
 
