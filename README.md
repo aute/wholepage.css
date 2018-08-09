@@ -18,7 +18,7 @@ Wholepage CSS 是一个暂未开源的主项目的副产物，主项目是一个
 
 `$ npm install wholepage.css --save`
 
-#Documentation and examples
+# Documentation and examples
 
 ### Grid system
 
