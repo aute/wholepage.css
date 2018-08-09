@@ -1,6 +1,6 @@
 {
   "name": "wholepage.css",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "grid layout with fixed aspect ratio",
   "main": "dist/wholepage.css",
   "scripts": {
