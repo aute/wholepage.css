@@ -1,51 +1,51 @@
-$wpcRowsRepeat: 60 !default;
-$wpcColumnsRepeat: $wpcRowsRepeat !default;
-$wpcContainerGutter: 1rem !default;
-$wpcContainerBgColor: rgba(0,0,0,0) !default;
-$wpcContainerBgURL:'' !default;
+$wRowsRepeat: 60 !default;
+$wColumnsRepeat: $wRowsRepeat !default;
+$wContainerGutter: 1rem !default;
+$wContainerBgColor: rgba(0,0,0,0) !default;
+$wContainerBgURL:'' !default;
 
-[class*="wpc-container"] {
+[class*="wcontainer"] {
   width: 100%;
   height: 100%;
   display: grid;
-  background: url($wpcContainerBgURL) center / cover;
-  background-color: $wpcContainerBgColor;
-  grid-template-rows: repeat($wpcRowsRepeat, 1fr);
-  grid-template-columns: repeat($wpcColumnsRepeat, 1fr);
+  background: url($wContainerBgURL) center / cover;
+  background-color: $wContainerBgColor;
+  grid-template-rows: repeat($wRowsRepeat, 1fr);
+  grid-template-columns: repeat($wColumnsRepeat, 1fr);
   box-sizing: border-box;
 }
 
-.wpc-container--gutter {
-  grid-gap: $wpcContainerGutter;
+.wcontainer--gutter {
+  grid-gap: $wContainerGutter;
 }
 
-[class*="wpc-block"] {
+[class*="wblock"] {
   overflow: hidden;
   display: grid;
   grid-row: auto / span 1;
   grid-column: auto / span 1;
 }
 
-@for $i from 1 through $wpcRowsRepeat {
-  .wpc-block--raw-#{$i} {
+@for $i from 1 through $wRowsRepeat {
+  .wblock--raw-#{$i} {
     grid-row: auto / span $i;
   }
 }
 
-@for $i from 1 through $wpcColumnsRepeat {
-  .wpc-block--col-#{$i} {
+@for $i from 1 through $wColumnsRepeat {
+  .wblock--col-#{$i} {
     grid-column: auto / span $i;
   }
 }
 
-@for $i from 1 through $wpcRowsRepeat {
-  .wpc-block--row-start-#{$i} {
+@for $i from 1 through $wRowsRepeat {
+  .wblock--row-start-#{$i} {
     grid-row-start: $i;
   }
 }
 
-@for $i from 1 through $wpcColumnsRepeat {
-  .wpc-block--col-start-#{$i} {
+@for $i from 1 through $wColumnsRepeat {
+  .wblock--col-start-#{$i} {
     grid-column-start: $i;
   }
 }
