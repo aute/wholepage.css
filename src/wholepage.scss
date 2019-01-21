@@ -21,7 +21,7 @@ $wContainerBgURL:'' !default;
 
 [class*="wblock"] {
   overflow: hidden;
-  display: grid;
+  display: block;
   grid-row: auto / span 1;
   grid-column: auto / span 1;
 }
